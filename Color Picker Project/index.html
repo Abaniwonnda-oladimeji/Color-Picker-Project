@@ -7,8 +7,20 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <p id = "displaycolor"></p>
-    <input type="color" name="colorpicker" id="currentcolor" value="#ffffff">
+    <div id ="displays">
+        <div id = "hexadecimal-container">
+            <h1>Hexa-decimal Color Code</h1>
+            <p id = "displaycolor"></p>
+        </div>
+        <div class="opacity-container">
+            <h1>Opacity/Alpha Channel</h1>
+            <p id = "displayopacity"></p>
+        </div>
+    </div>  
+    <div id = "inputs">
+        <input type="color" name="colorpicker" id="currentcolor" value="#ffffff">
+        <input type="range" id = "currentopacity" step = "0.1", min = "0.1", max = "1" value = "1">
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
